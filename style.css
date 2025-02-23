@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Sora";
+    src: url("./fonts/Sora-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAF9;
+}
+
+.author-info {
+    margin-top: auto;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+}
+
+main {
+    align-self: self-start;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+article {
+    width: 50%;
+}
+
+article div.circle {
+    margin-bottom: 16px;
+}
+
+.circle {
+    width: 64px;
+    height: 64px;
+    background-color: #fccb59;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.star {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle at 50% 30%, white 10%, #F5C044 80%);
+    -webkit-mask-image: url('./resources/Star_fill.svg');
+    mask-image: url('./resources/Star_fill.svg');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+article h2 {
+    font-family: "Sora";
+    font-size: 2.25rem;
+    color: #18181B;
+}
+
+article p {
+    font-family: "Sora";
+    font-size: 1.25rem;
+    color: #52525A;
+    line-height: 2;
+}
+
+article>ul {
+    margin-top: 24px;
+    list-style: none;
+    padding-left: 0;
+}
+
+article>ul>li {
+    margin-top: 16px;
+    font-family: "Sora";
+    font-size: 0.875rem;
+    color: #52525A;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.figure-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    width: 50%;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #fff;
+    width: 360px;
+    height: 200px;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+figure.figure-google {
+    align-self: self-end;
+}
+
+.figure-img {
+    display: flex;
+}
+
+.figure-stars {
+    margin-left: 16px;
+}
+
+figure h3 {
+    font-family: "Sora";
+    font-size: 1rem;
+    color: #18181B;
+    margin-top: 16px;
+}
+
+figure p {
+    font-family: "Sora";
+    font-size: 1rem;
+    color: #52525A;
+    margin-top: 8px;
+    line-height: 2;
+}
