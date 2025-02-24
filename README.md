@@ -17,6 +17,10 @@
     <a href="https://devchallenges.io/challenge/testimonial-page">
       Challenge
     </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/solution/45792/submit/complete">
+      Complete
+    </a>
   </h3>
 </div>
 
