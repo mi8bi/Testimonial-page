@@ -12,7 +12,7 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* 画面全体の高さを指定 */
+    min-height: 100vh;
     background-color: #FAFAF9;
 }
 
@@ -32,6 +32,7 @@ main {
     flex: 1;
     align-self: self-start;
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
 }
@@ -41,30 +42,9 @@ section {
     justify-content: center;
     align-items: center;
     gap: 48px;
-    margin-left: 80px;
-    margin-right: 80px;
-    border: solid 1px #333;
+    margin-left: 72px;
+    margin-right: 72px;
 }
-
-@media screen and (width < 1280px){
-    section {
-        flex-direction: column;
-        margin-left: 32px;
-        margin-right: 32px;
-        gap: 24px;
-    }
-
-    .figure-container {
-        width: 640px;
-    }
-}
-
-/* TODO */
-/* @media screen and (width < 1024px) {
-    figure {
-        background-color: red;
-    }
-} */
 
 article div.circle {
     margin-bottom: 16px;
@@ -123,7 +103,6 @@ article>ul>li {
 }
 
 article{
-    border: solid 1px #333;
     flex: 0 1 50%;
 }
 
@@ -132,18 +111,17 @@ article{
     display: flex;
     flex-direction: column;
     row-gap: 32px;
-    border: solid 1px #333;
 }
 
 figure {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     background-color: #fff;
     width: 360px;
     height: 200px;
     padding: 32px;
-    box-shadow: 4px 4px 8px 8px #FAFAF9;
+    box-shadow: 8px 8px 16px 16px #FAFAF9;
     border-radius: 16px;
 }
 
@@ -172,4 +150,35 @@ figure p {
     color: #52525A;
     margin-top: 8px;
     line-height: 2;
+}
+
+@media screen and (width < 1280px){
+    section {
+        flex-direction: column;
+        margin-top: 32px;
+        margin-left: 32px;
+        margin-right: 32px;
+        gap: 24px;
+    }
+
+    .figure-container {
+        width: 50vw;
+    }
+}
+
+@media screen and (width < 1024px) {
+    section {
+        margin-top: 32px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .figure-container {
+        width: 100%;
+    }
+    figure.figure-google {
+        width: 100%;
+    }
+    figure.figure-meta {
+        width: 100%;
+    }
 }
